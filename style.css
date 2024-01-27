@@ -8,3 +8,7 @@ body{
     background-color: rgb(15, 13, 32);
     color: #fff;
 }
+
+header h1{
+    font-size: clamp(1rem 1vw 7rem);
+}
