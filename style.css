@@ -1,5 +1,6 @@
 *{
     box-sizing: border-box;
+    list-style: none;
 }
 
 body{
@@ -7,6 +8,7 @@ body{
     padding: 5em;
     background-color: rgb(15, 13, 32);
     color: #fff;
+    
 }
 
 header h1{
@@ -15,4 +17,19 @@ header h1{
 
 p{
     font-size: clamp(.5rem 1vw 2rem);
+}
+
+.bottom-nav{
+    display: none;
+}
+
+@media (max-width: 768px ) {
+    .bottom-nav{
+        display: flex;
+        background-color: rgb(131, 59, 59);
+        border: 1 solid #fff;
+        width: 100%;
+        height: 3rem;
+        top: 70;
+    }
 }
