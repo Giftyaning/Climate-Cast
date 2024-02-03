@@ -10,7 +10,6 @@ body{
 }
 
 .container{
-    background-color: rgb(68, 35, 12);
     max-height: 100vh;
     max-width: 100%;
     padding: 2em;
@@ -19,6 +18,7 @@ body{
     gap: 3em;
 }
 
+/* Top Nav */
 nav{
     display: flex;
     flex-direction: row;
@@ -26,19 +26,62 @@ nav{
     margin-bottom: 1.5em;
 }
 
-
+/* Main Content */
 .description{
-    background-color: rgb(21, 97, 80, 0.2);
-    height: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     width: 100%;
+    padding: 2em;
+    overflow: hidden;
+    overflow-y: scroll;
+    overflow-x: scroll;
 }
 
+.pressure{
+    display: flex;
+    gap: 5em;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    background-color: rgb(25, 57, 68, 0.5);
+    padding: .5em ;
+    border-radius: 1em;
+    margin-top: 2em;
+}
+
+.hourly-forecast{
+    display: flex;
+    gap: 1em;
+    padding: 1em 0;
+    max-width: 100%;
+    overflow-x: scroll;
+}
+
+.infom{
+    padding: .5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(61, 30, 70, 0.5);
+    border-radius: 1.5em;
+}
+
+/* Bottom Nav */
 .nav-icons{
     display: none;
 }
 
+
 @media (max-width: 768px ) {
-   
+
+    
     /* Bottom Navbar */
     .nav-icons{
         display: flex;
