@@ -80,6 +80,7 @@ nav{
     justify-content: center;
     align-items: center;
     margin-top: 2em;
+    width: 25rem;
     max-width: 100%;
     max-height: 35em;
     background-color: rgb(25, 57, 68, 0.5);
@@ -112,6 +113,66 @@ nav{
     border-radius: .1em;
 }
 
+.extra-info{
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    max-width: 100%;
+    gap: 2em;
+    background-color: rgb(25, 57, 68, 0.2);
+    padding: .5em;
+    border-radius: 1em;
+    margin-top: 2em;
+    overflow: hidden;
+}
+
+.extra{
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
+    max-width: 60%;
+    gap: 2.5em;
+}
+
+/* Humidity */
+.humidity{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    width: 25rem;
+    max-width: 100%;
+    max-height: 11rem;
+    background-color: rgb(25, 57, 68, 0.5);
+    padding: 1em;
+    border-radius: 1em;
+    margin-top: 2em;
+}
+
+.sunset{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    width: 25rem;
+    max-width: 100%;
+    max-height: 11rem;
+    background-color: rgb(25, 57, 68, 0.5);
+    padding: 1em;
+    border-radius: 1em;
+    margin-top: 2em;
+}
+
+.map{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    width: 25rem;
+    max-width: 100%;
+    max-height: 11rem;
+    background-color: rgb(25, 57, 68, 0.5);
+    padding: 1em;
+    border-radius: 1em;
+    margin-top: 2em;
+}
+
+
 /* Bottom Nav */
 .nav-icons{
     display: none;   
@@ -123,6 +184,16 @@ nav{
     nav {
         display: none;
     }
+
+    .extra-info{
+        display: inline-block;
+    }
+
+    .extra{
+        display: inline-block;
+    }
+
+   
     
     /* Bottom Navbar */
     .nav-icons{
