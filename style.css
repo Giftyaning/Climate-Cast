@@ -27,7 +27,7 @@ nav{
 }
 
 /* Main Content */
-.description{
+.content{
     display: flex;
     justify-content: center;
     align-items: center;
