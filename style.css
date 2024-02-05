@@ -133,32 +133,8 @@ nav{
 }
 
 /* Humidity */
-.humidity{
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    width: 25rem;
-    max-width: 100%;
-    max-height: 11rem;
-    background-color: rgb(25, 57, 68, 0.5);
-    padding: 1em;
-    border-radius: 1em;
-    margin-top: 2em;
-}
-
-.sunset{
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    width: 25rem;
-    max-width: 100%;
-    max-height: 11rem;
-    background-color: rgb(25, 57, 68, 0.5);
-    padding: 1em;
-    border-radius: 1em;
-    margin-top: 2em;
-}
-
+.humidity,
+.sunset,
 .map{
     display: flex;
     flex-direction: column;
@@ -174,6 +150,13 @@ nav{
 
 .humidity, .sunset, .map, span {
     opacity: 0.7;
+}
+
+.divider{
+    height: 0.1rem;
+    max-width: 100%;
+    background-color: rgb(255, 255, 255, 0.9);
+    margin-top: 0.3em;
 }
 
 /* Bottom Nav */
