@@ -26,6 +26,20 @@ nav{
     margin-bottom: 1.5em;
 }
 
+/* Left Nav */
+.left-nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: inline;
+    gap: 2rem;
+    padding: 3em;
+    background-color: rgb(25, 57, 68, 0.5);
+    max-height: 100vh;
+    max-width: 25%;
+    margin-bottom: 0;
+}
+
 /* Main Content */
 .content{
     display: flex;
@@ -186,8 +200,10 @@ nav{
         display: flex;
         justify-content: center;
         align-items: center;
-        top: 50%;
-        background-color: rgb(52, 20, 60, 0.3);
+        position: fixed;
+        z-index: 1;
+        bottom: 0;
+        background-color: rgb(25, 57, 68, 0.5);
         height: 4rem;
         width: 100%;
         max-width: 200rem;
