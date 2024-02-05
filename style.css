@@ -128,7 +128,7 @@ nav{
 .extra{
     display: grid;
     grid-template-columns: 1fr 1fr 2fr;
-    max-width: 60%;
+    max-width: 100%;
     gap: 2.5em;
 }
 
@@ -172,6 +172,9 @@ nav{
     margin-top: 2em;
 }
 
+.humidity, .sunset, .map, span {
+    opacity: 0.7;
+}
 
 /* Bottom Nav */
 .nav-icons{
