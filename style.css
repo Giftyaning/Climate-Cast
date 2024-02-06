@@ -75,6 +75,8 @@ nav{
     border-radius: 1.5em;
 }
 
+
+
 .info-weekly{
     display: flex;
     flex-direction: column;
@@ -116,9 +118,8 @@ nav{
 
 .extra-info{
     display: grid;
-    grid-template-columns: 2fr 2fr;
+    grid-template-columns: 1fr 2fr;
     max-width: 100%;
-    gap: 2em;
     background-color: rgb(25, 57, 68, 0.2);
     padding: .5em;
     border-radius: 1em;
@@ -128,8 +129,9 @@ nav{
 
 .extra{
     display: inline-block;
-    max-width: 97%;
+    max-width: 100%;
     gap: 2.5em;
+    overflow-y: auto;
 }
 
 .top-extra {
