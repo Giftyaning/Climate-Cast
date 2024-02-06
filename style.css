@@ -120,6 +120,7 @@ nav{
     display: grid;
     grid-template-columns: 1fr 2fr;
     max-width: 100%;
+    gap: .5em;
     background-color: rgb(25, 57, 68, 0.2);
     padding: .5em;
     border-radius: 1em;
