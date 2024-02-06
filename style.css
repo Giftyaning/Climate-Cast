@@ -21,24 +21,11 @@ body{
 /* Top Nav */
 nav{
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-end;
     margin-bottom: 1.5em;
 }
 
-/* Left Nav */
-.left-nav{
-    position: fixed;
-    top: 0;
-    left: 0;
-    display: inline;
-    gap: 2rem;
-    padding: 3em;
-    background-color: rgb(25, 57, 68, 0.5);
-    max-height: 100vh;
-    max-width: 25%;
-    margin-bottom: 0;
-}
+
 
 /* Main Content */
 .content{
@@ -198,10 +185,6 @@ nav{
 
 @media (max-width: 768px ) {
 
-    nav {
-        display: none;
-    }
-
     .extra-info{
         display: inline;
     }
@@ -217,26 +200,4 @@ nav{
         width: 25rem;
     }
 
-   
-    
-    /* Bottom Navbar */
-    .nav-icons{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        position: fixed;
-        z-index: 1;
-        bottom: 0;
-        background-color: rgb(25, 57, 68, 0.5);
-        height: 4rem;
-        width: 100%;
-        max-width: 200rem;
-        padding: 1em;
-        border-radius: 1em;
-        gap: 10em;
-        overflow: hidden;
-    }
-    .nav-icons i{
-        font-size: 2rem;
-    }
 }
