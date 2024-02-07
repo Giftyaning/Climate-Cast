@@ -25,7 +25,32 @@ nav{
     margin-bottom: 1.5em;
 }
 
+/* Search button */
+.search-container{
+    width: 50%;
+    max-width: 50rem;
+    display: flex;
+    justify-content: end;
+    gap: .7rem;
+}
 
+.search-input{
+    width: 60%;
+    max-width: 20rem;
+}
+
+.search-input,
+.search-button{
+    padding: .5em;
+    background-color: rgb(51, 47, 83, 0.5);
+    color: #fff;
+    border-radius: 5rem;
+    border: .1rem solid rgba(114, 107, 161, 0.5) ;
+}
+
+.search-button{
+    border-radius: .5rem;
+}
 
 /* Main Content */
 .content{
