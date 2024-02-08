@@ -205,10 +205,7 @@ nav{
     margin-top: 0.3em;
 }
 
-/* Bottom Nav */
-.nav-icons{
-    display: none;   
-}
+
 
 
 @media (max-width: 768px ) {
