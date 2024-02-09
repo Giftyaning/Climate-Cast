@@ -18,6 +18,8 @@ body{
     gap: 3em;
 }
 
+
+
 /* Top Nav */
 nav{
     display: flex;
@@ -52,6 +54,7 @@ nav{
     border-radius: .5rem;
 }
 
+
 /* Main Content */
 .content{
     display: flex;
@@ -70,7 +73,7 @@ nav{
     gap: 5em;
 }
 
-
+/* Daily Weather Information */
 .info{
     display: flex;
     flex-direction: column;
@@ -101,7 +104,7 @@ nav{
 }
 
 
-
+/* Weekly Weather Information */
 .info-weekly{
     display: flex;
     flex-direction: column;
@@ -165,7 +168,7 @@ nav{
     gap: 2.5em;
 }
 
-/* Humidity */
+/* Humidity and Sunset */
 .humidity,
 .sunset{
     display: flex;
@@ -180,6 +183,7 @@ nav{
     margin-top: 2em;
 }
 
+/* Map */
 .map {
     display: flex;
     flex-direction: column;
