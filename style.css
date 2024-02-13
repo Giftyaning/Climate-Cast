@@ -21,10 +21,12 @@ body{
 
 /* Typography */
 h1{
-    font-size: clamp(4rem, 2vw, 7rem);
+    font-size: clamp(4rem, 2vw, 6rem);
+    margin-top: 0;
 }
 h2{
     font-size: clamp(3rem, 2vw, 5rem);
+    margin-bottom: .35em;
 }
 h3{
     font-size: clamp(1.5rem, 2vw, 5rem);
@@ -79,6 +81,13 @@ nav{
     overflow: hidden;
     overflow-y: scroll;
     overflow-x: scroll;
+}
+
+.top{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .pressure{
