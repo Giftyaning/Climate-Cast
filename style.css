@@ -203,6 +203,7 @@ nav{
     padding: 1em;
     border-radius: 1em;
     margin-top: 2em;
+    gap: .5em;
 }
 
 /* Map */
