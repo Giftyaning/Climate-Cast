@@ -21,12 +21,14 @@ body{
 
 /* Typography */
 h1{
-    font-size: clamp(3rem 1vw 5rem);
+    font-size: clamp(4rem, 2vw, 7rem);
 }
 h2{
-    font-size: clamp(3rem 7vw 5rem);
+    font-size: clamp(3rem, 2vw, 5rem);
 }
-h3{}
+h3{
+    font-size: clamp(1.5rem, 2vw, 5rem);
+}
 p{}
 
 
