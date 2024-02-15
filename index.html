@@ -17,7 +17,7 @@
         <nav>
             <!-- Search Bar -->
             <div class="search-container">
-                <input type="text" class="search-input" placeholder="Search for a city">
+                <input type="text" class="search-input" placeholder="Search for a city" autofocus="on" id="search-text-input">
                 <button class="search-button">Search</button>
             </div>
         </nav>        
@@ -43,7 +43,7 @@
 
             <!-- Daily Weather Information -->
             <div class="info">
-                <p>HOURLY FORECAST</p>
+                <p>hourly forecast</p>
                 <div class="hourly-forecast" id="hourly-forecast">
                     <div class="infom">
                         <div class="title">Now</div>
@@ -194,7 +194,7 @@
             <div class="extra-info">
                     <!-- Weekly Weather Information -->
                 <div class="info-weekly">
-                    <p>10-DAY FORECAST</p>
+                    <p>10-day forecast</p>
                     <div class="weekly-forecast">
                         <div class="day">
                             <div class="title">Today</div>
@@ -260,7 +260,7 @@
                     <div class="top-extra">
                         <div class="humidity">
                             <div class="icon">
-                                <span>Humidity</span>
+                                <span><p>humidity</p></span>
                             <div class="divider"></div> 
                             </div>
                             
@@ -269,7 +269,7 @@
                         <!-- Sunset -->
                         <div class="sunset">
                             <div class="icon">
-                                <span>Sunset</span>
+                                <span><p>Sunset</p></span>
                                 <div class="divider"></div>
                             </div>
                             <h1>16:50</h1>
@@ -278,7 +278,7 @@
                     <!-- Map -->
                     <div class="map">
                         <div class="icon">
-                            <span>Wind Map</span>
+                            <span><p>Wind Map</p></span>
                             <div class="divider"></div>
                         </div>
                         <div id="map"></div>

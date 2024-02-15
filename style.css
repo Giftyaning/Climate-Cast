@@ -31,7 +31,9 @@ h2{
 h3{
     font-size: clamp(1.5rem, 2vw, 5rem);
 }
-p{}
+p{
+    text-transform: uppercase;
+}
 
 
 
@@ -218,6 +220,7 @@ nav{
     padding: 1em;
     border-radius: 1em;
     margin-top: 2em;
+    display: none;
 }
 
 
