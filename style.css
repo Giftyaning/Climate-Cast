@@ -146,6 +146,7 @@ nav{
     overflow-y: scroll;
 }
 
+/* Weekly Forecast Data */
 .weekly-forecast {
     display: inline-block;
     gap: 1em;
