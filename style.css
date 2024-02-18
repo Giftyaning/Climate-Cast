@@ -100,6 +100,7 @@ nav{
 }
 
 /* Daily Weather Information */
+
 .info{
     display: flex;
     flex-direction: column;
@@ -131,7 +132,7 @@ nav{
 
 
 /* Weekly Weather Information */
-.info-weekly{
+/*.info-weekly{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -144,7 +145,7 @@ nav{
     padding: .5em;
     border-radius: 1em;
     overflow-y: scroll;
-}
+}*/
 
 /* Weekly Forecast Data */
 .weekly-forecast {
@@ -197,6 +198,7 @@ nav{
 
 /* Humidity and Sunset */
 .humidity,
+.info-weekly,
 .sunset{
     display: flex;
     flex-direction: column;
@@ -227,7 +229,7 @@ nav{
 }
 */
 
-.humidity, .sunset, .map, span {
+.humidity, .sunset, .info-weekly, .map, span {
     opacity: 0.7;
 }
 
