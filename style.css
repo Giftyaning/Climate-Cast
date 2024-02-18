@@ -139,7 +139,7 @@ nav{
     margin-top: 2em;
     width: 25rem;
     max-width: 100%;
-    max-height: 35em;
+    max-height: 10em;
     background-color: rgb(25, 57, 68, 0.5);
     padding: .5em;
     border-radius: 1em;
@@ -211,7 +211,7 @@ nav{
     gap: .5em;
 }
 
-/* Map */
+/* Map 
 .map {
     display: flex;
     flex-direction: column;
@@ -225,7 +225,7 @@ nav{
     margin-top: 2em;
     display: none;
 }
-
+*/
 
 .humidity, .sunset, .map, span {
     opacity: 0.7;
