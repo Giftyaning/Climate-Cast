@@ -160,7 +160,7 @@ nav{
     display: flex;
     gap: 2.8em;
     overflow-x: scroll;
-    margin-top: 2em;
+    margin-top: .2em;
 }
 
 .range{
