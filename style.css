@@ -46,8 +46,8 @@ nav{
     margin-bottom: 1.5em;
 }
 
-/* Search button */
-.search-container{
+/* Search */
+#search-form{
     width: 50%;
     max-width: 50rem;
     display: flex;
@@ -55,12 +55,12 @@ nav{
     gap: .7rem;
 }
 
-.search-input{
+#search-text-input{
     width: 60%;
     max-width: 20rem;
 }
 
-.search-input,
+#search-text-input,
 .search-button{
     padding: .5em;
     background-color: rgb(51, 47, 83, 0.5);
@@ -73,6 +73,7 @@ nav{
     border-radius: .5rem;
 }
 
+/* End of search */
 
 /* Main Content */
 .content{

@@ -1,9 +1,12 @@
+//function to display the value put in the search bar
 function search(event) {
-    event.preventDefault();
-    let searchElement = document.querySelector("#search-text-input");
-    let cityElement = document.querySelector("#city");
-    cityElement.innerHTML = searchElement.value;
+  event.preventDefault(); 
+  let searchInput = document.querySelector("#search-text-input"); 
+
+  let h1 = document.querySelector("#city");
+  h1.innerHTML = searchInput.value;
 }
 
-let search = document.querySelector("#search-container");
-search.addEventListener("submit", search )
+let form = document.querySelector("#search-form");
+
+form.addEventListener("submit", search); 
