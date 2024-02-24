@@ -100,6 +100,16 @@ nav{
     gap: 5em;
 }
 
+/* Date and Time */
+.date-time{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 500em;
+    max-width: 70%;
+    margin-top: 3em;
+}
+
 /* Daily Weather Information */
 
 .info{
