@@ -73,8 +73,6 @@ nav{
     border-radius: .5rem;
 }
 
-/* End of search */
-
 /* Main Content */
 .content{
     display: flex;
@@ -110,8 +108,7 @@ nav{
     margin-top: 3em;
 }
 
-/* Daily Weather Information */
-
+/* Daily Weather Information 
 .info{
     display: flex;
     flex-direction: column;
@@ -139,8 +136,7 @@ nav{
     align-items: center;
     background-color: rgba(61, 30, 70, 0.3);
     border-radius: 1.5em;
-}
-
+} */
 
 /* Weekly Weather Information */
 /*.info-weekly{
@@ -259,7 +255,6 @@ nav{
 
 
 @media (max-width: 768px ) {
-
     .extra-info{
         display: inline;
     }
