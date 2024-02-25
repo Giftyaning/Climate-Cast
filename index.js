@@ -48,3 +48,12 @@ function getWeather() {
     alert('Error fetching hourly forecast data. Please try again later')
   });
 }
+
+//Updating the html with the weather information
+function weatherDisplay(data){
+  const cityName = document.getElementById('city');
+  const currentTemp = document.getElementById('temperature');
+  const humidity = document.getElementById('high');
+  const lowHumidity = document.getElementById('low');
+  
+}
