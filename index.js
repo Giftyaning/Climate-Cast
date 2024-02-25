@@ -24,14 +24,27 @@ function getWeather() {
 
   //fetch the current weather
   fetch(currentWeatherUrl)
-  .then(Response => Response.json())
-  .then(data => {
-    displayWeather(data);
-  })
+    .then(response => response.json())
+    .then(data => {
+      displayWeather(data);
+    })
 
   //Message to display if there is an error
-  .catch(Error => {
+  .catch(error => {
     console.error('Fetching error:', error);
     alert('Error fetching current weather. Please try again later')
-  })
+  });
+
+  //fetch the hourly weather
+  fetch(hourlyForecastUrl)
+    .then(Response => Response.json())
+    .then(data => {
+      displayHourlyForecast(data.list);
+    })
+
+  //Message to display if there is an error
+  .catch(error => {
+    console.error('Fetching hourly forecast error:', error);
+    alert('Error fetching hourly forecast data. Please try again later')
+  });
 }
