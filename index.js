@@ -7,9 +7,19 @@ function search(event) {
   h1.innerHTML = searchInput.value;
 }
 
-let form = document.querySelector("#search-form");
+let searchForm = document.querySelector("#search-form");
 
-form.addEventListener("submit", search); 
+searchForm.addEventListener("submit", search); 
 
 
+
+//function to get weather
+function getWeather() {
+  const apiKey = "2cd45d17553ff56a907cdbed85b6e2e6";
+  //const cityName = document.getElementById('city').value
+
+    //Open weather link
+  const currentWeatherUrl = 'https://api.openweathermap.org/data/2.5/weather?q={city name}&appid={2cd45d17553ff56a907cdbed85b6e2e6}';
+  const hourlyForecastUrl = 'https://pro.openweathermap.org/data/2.5/forecast/hourly?q={city name}&appid={2cd45d17553ff56a907cdbed85b6e2e6}';
+}
 
