@@ -86,11 +86,9 @@ nav {
     overflow: hidden;
     overflow-y: scroll;
     overflow-x: scroll;
-    background-color: blue;
 }
 
 .current-weather {
-    background-color: brown;
     padding: 1em;
     display: flex;
     justify-content: center;
@@ -100,7 +98,6 @@ nav {
 
 /* Date and Time */
 .date-time {
-    background-color: aqua;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -111,7 +108,6 @@ nav {
     display: flex;
     justify-content: space-evenly;
     margin-top: 2em;
-    background-color: chocolate;
     gap: 3em;
 }
 
