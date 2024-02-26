@@ -1,17 +1,15 @@
-
-
-*{
+* {
     box-sizing: border-box;
     list-style: none;
 }
 
-body{
+body {
     margin: 0 auto;
     background-color: rgb(15, 13, 32);
     color: #fff;
 }
 
-.container{
+.container {
     max-height: 100vh;
     max-width: 100%;
     padding: 2em;
@@ -20,34 +18,35 @@ body{
     gap: 3em;
 }
 
-
 /* Typography */
-h1{
+h1 {
     font-size: clamp(4rem, 2vw, 6rem);
     margin-top: 0;
 }
-h2{
+
+h2 {
     font-size: clamp(3rem, 2vw, 5rem);
     margin-bottom: .35em;
 }
-h3{
+
+h3 {
     font-size: clamp(1.5rem, 2vw, 5rem);
 }
-p{
+
+p {
     text-transform: uppercase;
 }
 
-
-
-/* Top Nav */
-nav{
+/* Nav Section */
+nav {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
+    align-items: center;
     margin-bottom: 1.5em;
 }
 
-/* Search */
-#search-form{
+/* Search bar */
+#search-form {
     width: 50%;
     max-width: 50rem;
     display: flex;
@@ -55,26 +54,29 @@ nav{
     gap: .7rem;
 }
 
-#search-text-input{
+#search-text-input {
     width: 60%;
     max-width: 20rem;
+    max-height: 60%;
 }
 
 #search-text-input,
-.search-button{
+.search-button {
     padding: .5em;
     background-color: rgb(51, 47, 83, 0.5);
     color: #fff;
     border-radius: 5rem;
-    border: .1rem solid rgba(114, 107, 161, 0.5) ;
+    border: .1rem solid rgba(114, 107, 161, 0.5);
 }
 
-.search-button{
+.search-button {
     border-radius: .5rem;
 }
 
+/* Nav Section End */
+
 /* Main Content */
-.content{
+.main-content {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -84,44 +86,48 @@ nav{
     overflow: hidden;
     overflow-y: scroll;
     overflow-x: scroll;
+    background-color: blue;
 }
 
-.top{
+.current-weather {
+    background-color: brown;
+    padding: 1em;
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     flex-direction: column;
 }
 
-.pressure{
-    display: flex;
-    gap: 5em;
-}
-
 /* Date and Time */
-.date-time{
+.date-time {
+    background-color: aqua;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 500em;
-    max-width: 70%;
-    margin-top: 3em;
 }
 
-/* Daily Weather Information 
-.info{
+/* Description */
+.description {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 2em;
+    background-color: chocolate;
+    gap: 3em;
+}
+
+.info {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     max-width: 100%;
     background-color: rgb(25, 57, 68, 0.5);
-    padding: .5em ;
+    padding: .5em;
     border-radius: 1em;
     margin-top: 2em;
 }
 
-.hourly-forecast{
+.hourly-forecast {
     display: flex;
     gap: 1em;
     padding: 1em 0;
@@ -129,17 +135,18 @@ nav{
     overflow-x: scroll;
 }
 
-.infom{
+.infom {
     padding: .5em;
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: rgba(61, 30, 70, 0.3);
     border-radius: 1.5em;
-} */
+}
+
 
 /* Weekly Weather Information */
-/*.info-weekly{
+.info-weekly {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -152,121 +159,39 @@ nav{
     padding: .5em;
     border-radius: 1em;
     overflow-y: scroll;
-}*/
-
-/* Weekly Forecast Data */
-.weekly-forecast {
-    display: inline-block;
-    gap: 1em;
-    padding: 1em 0;
-    max-width: 100%;
-    overflow-x: scroll;
 }
 
-.day{
+.info {
     display: flex;
-    gap: 2.8em;
-    overflow-x: scroll;
-    margin-top: .2em;
-}
-
-.range{
-    width: 5rem;
-    max-width: 50%;
-    max-height: .2em;
-    border: 1px solid #fff;
-    margin-top: .35em;
-    border-radius: .1em;
-}
-
-.extra-info{
-    display: grid;
-    grid-template-columns: 1fr 2fr;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     max-width: 100%;
-    gap: .5em;
-    background-color: rgb(25, 57, 68, 0.1);
+    background-color: rgb(25, 57, 68, 0.5);
     padding: .5em;
     border-radius: 1em;
     margin-top: 2em;
-    overflow: hidden;
 }
 
-.extra{
-    display: inline-block;
-    max-width: 100%;
-    gap: 2.5em;
-    overflow-y: auto;
-}
-
-.top-extra {
+.hourly-forecast {
     display: flex;
-    gap: 2.5em;
-}
-
-/* Humidity and Sunset */
-.humidity,
-.info-weekly,
-.sunset{
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    width: 25rem;
+    gap: 1em;
     max-width: 100%;
-    max-height: 11rem;
-    background-color: rgb(25, 57, 68, 0.5);
-    padding: 1em;
-    border-radius: 1em;
-    margin-top: 2em;
-    gap: .5em;
+    overflow-x: scroll;
 }
 
-/* Map 
-.map {
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    width: 52rem;
-    max-width: 100%;
-    max-height: 20rem;
-    background-color: rgb(25, 57, 68, 0.5);
-    padding: 1em;
-    border-radius: 1em;
-    margin-top: 2em;
-    display: none;
-}
-*/
-
-.humidity, .sunset, .info-weekly, .map, span {
-    opacity: 0.7;
-}
-
-.divider{
-    height: 0.1rem;
+.divider {
+    height: .05rem;
     max-width: 100%;
     background-color: rgb(255, 255, 255, 0.9);
     margin-top: 0.3em;
 }
 
-/*#map {
-    max-height: 5rem;
-    background-color: aquamarine;
-}*/
-
-
-
-@media (max-width: 768px ) {
-    .extra-info{
-        display: inline;
-    }
-
-    .extra{
-        display: inline;
-    }
-
-    .top-extra{
-        display: inline;
-    }
-    .map {
-        width: 25rem;
-    }
+.inform {
+    padding: .5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+
+/* Main Content End */
