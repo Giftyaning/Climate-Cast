@@ -48,9 +48,9 @@ function displayTemperature(response) {
 
   descriptionElement.innerHTML = response.data.weather[0].description;
 
-  humidityElement.innerHTML = response.data.main.humidity + "%";
+  humidityElement.innerHTML = "Humidity:" + " " + response.data.main.humidity + "%";
 
-  windElement.innerHTML = Math.round(response.data.wind.speed) + "km";
+  windElement.innerHTML = "Wind:" + " " + Math.round(response.data.wind.speed) + "km";
 
   dateElement.innerHTML = formatDate(response.data.dt * 1000);
 
@@ -105,3 +105,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
   form.addEventListener("submit", search);
 });
+
+
+
+
+
+
