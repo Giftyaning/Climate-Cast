@@ -103,6 +103,11 @@ nav {
     align-items: center;
 }
 
+.date{
+    margin-right: 5em;
+    background-color: aquamarine;
+}
+
 /* Description */
 .description {
     display: flex;
