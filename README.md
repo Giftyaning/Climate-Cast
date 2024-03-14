@@ -1,3 +1,4 @@
+## Climate Cast
 ![Climate Cast](assets/images/Climate-Cast.jpeg)
 
 Click the link to gain access to the Employee Password Generator! https://giftyaning.github.io/Climate-Cast/
