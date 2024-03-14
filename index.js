@@ -1,3 +1,4 @@
+//Function for Date
 function formatDate(timestamp) {
   let date = new Date(timestamp);
 
@@ -53,32 +54,9 @@ function displayTemperature(response) {
   windElement.innerHTML = "Wind:" + " " + Math.round(response.data.wind.speed) + "km";
 
   dateElement.innerHTML = formatDate(response.data.dt * 1000);
-
-  //Weather Icon
-  let weatherIconElement = document.querySelector(".weather-icon");
-
-  const weatherIcons = {
-    Clear: "☀️",
-
-    Clouds: "☁️",
-
-    Rain: "🌧️",
-
-    Drizzle: "🌦️",
-
-    Thunderstorm: "⛈️",
-
-    Snow: "❄️",
-
-    Mist: "🌫️",
-  };
-
-  let weather = response.data.weather[0].main;
-
-  weatherIconElement.innerHTML = weatherIcons[weather] || "❓";
 }
 
-//Function for the Temperature display
+//Function to fetch the Temperature
 function getWeather(cityName) {
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=3980a7c8f2a782241a093131b099f993&units=metric`;
 
@@ -107,6 +85,50 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
+
+//Function to fetch the daily forecast
+function getForecast(cityName) {
+  let apiUrl = `https://api.openweathermap.org/data/2.5/forecast?q=${cityName}&appid=3980a7c8f2a782241a093131b099f993&units=metric`;
+  axios.get(apiUrl).then(displayForecast);
+}
+
+
+//Function to display the 5-Day forecast
+function displayForecast(response) {
+  let forecastElement = document.querySelector("#daily-forecast");
+  forecastElement.innerHTML = "";
+
+  response.data.list.forEach(function (forecastDay) {
+    let forecastDate = new Date(forecastDay.dt * 1000);
+    let forecastDayOfWeek = forecastDate.toLocaleDateString("en-US", { weekday: "short" });
+    let forecastIcon = forecastDay.weather[0].icon;
+    let forecastTemperature = Math.round(forecastDay.main.temp) + "ºC";
+
+    let forecastHTML = `
+      <div class="inform">
+        <div class="day">${forecastDayOfWeek}</div>
+        <img src="http://openweathermap.org/img/wn/${forecastIcon}.png" alt="Weather Icon" class="weather-icon">
+        <div class="temp">${forecastTemperature}</div>
+      </div>
+    `;
+    forecastElement.innerHTML += forecastHTML;
+  });
+}
+
+
+//Function for the search bar
+function search(event) {
+  event.preventDefault();
+  let searchInput = document.querySelector("#search-text-input");
+  let cityName = searchInput.value.trim();
+
+  if (cityName.length > 0) {
+    getWeather(cityName);
+    getForecast(cityName); 
+  }
+
+  searchInput.value = "";
+}
 
 
 
