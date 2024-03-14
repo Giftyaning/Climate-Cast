@@ -1,4 +1,6 @@
-# Climate-Cast
+![Climate Cast](assets/images/Climate-Cast.jpeg)
+
+Click the link to gain access to the Employee Password Generator! https://giftyaning.github.io/Climate-Cast/
 
 Climate Cast is a web application designed to provide users with current weather conditions and a 5-day forecast for cities around the world. With dynamically updated HTML and CSS, users can easily plan their travels and activities based on weather forecasts.
 
