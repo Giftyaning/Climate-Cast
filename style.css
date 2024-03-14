@@ -128,6 +128,8 @@ nav {
     margin-top: 2em;
 }
 
+
+
 .daily-forecast {
     display: flex;
     gap: 1em;
@@ -135,6 +137,8 @@ nav {
     max-width: 100%;
     overflow-x: scroll;
 }
+
+
 
 .infom {
     padding: .5em;
@@ -172,13 +176,6 @@ nav {
     padding: .5em;
     border-radius: 1em;
     margin-top: 2em;
-}
-
-.hourly-forecast {
-    display: flex;
-    gap: 1em;
-    max-width: 100%;
-    overflow-x: scroll;
 }
 
 .divider {
